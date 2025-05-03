@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Browser Extension Manager</title>
+  </head>
+  <body>
+    <div class="site-container">
+      <header>
+        <div class="logo-text-wrap">
+          <div class="logo-wrap">
+            <img
+              src="assets/images/logo-solo.svg"
+              alt="Browser Extensions Company Logo"
+              class="brand-logo"
+            />
+          </div>
+          <span class="logo-text">Extensions</span>
+        </div>
+        <div class="dark-light-mode-button" id="theme-toggle">
+          <img
+            id="theme-icon"
+            src="assets/images/icon-sun.svg"
+            alt="dark/light mode icon"
+          />
+        </div>
+      </header>
+      <section class="extension-filters-group">
+        <h2>Extensions List</h2>
+        <div class="filter-buttons-group">
+          <button class="filter-button is-active" type="button">All</button>
+          <button class="filter-button" type="button">Active</button>
+          <button class="filter-button" type="button">Inactive</button>
+        </div>
+      </section>
+      <main id="extensions-list" class="extension-dashboard">
+        <div class="extension-card">
+          <div class="extension-logo-title-group">
+            <img
+              src="assets/images/logo-devlens.svg"
+              alt=""
+              class="extension-logo"
+            />
+            <div class="title-description">
+              <h3 class="extension-name">DevLens</h3>
+              <p class="extension-description">
+                Quickly inspect page layouts and visualize element boundries.
+              </p>
+            </div>
+          </div>
+
+          <div class="remove-active-status-group">
+            <button class="remove-button" type="button">Remove</button>
+            <label class="extension-toggle">
+              <input type="checkbox" class="toggle-input" />
+              <span class="toggle-slider" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-logo-title-group">
+            <img
+              src="assets/images/logo-style-spy.svg"
+              alt=""
+              class="extension-logo"
+            />
+            <div class="title-description">
+              <h3 class="extension-name">StyleSpy</h3>
+              <p class="extension-description">
+                Instantly analyze and copy CSS from any webpage element.
+              </p>
+            </div>
+          </div>
+
+          <div class="remove-active-status-group">
+            <button class="remove-button" type="button">Remove</button>
+            <label class="extension-toggle">
+              <input type="checkbox" class="toggle-input" />
+              <span class="toggle-slider" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-logo-title-group">
+            <img
+              src="assets/images/logo-speed-boost.svg"
+              alt=""
+              class="extension-logo"
+            />
+            <div class="title-description">
+              <h3 class="extension-name">SpeedBoost</h3>
+              <p class="extension-description">
+                Optimizes browser resource usage to accelerate page loading.
+              </p>
+            </div>
+          </div>
+
+          <div class="remove-active-status-group">
+            <button class="remove-button" type="button">Remove</button>
+            <label class="extension-toggle">
+              <input type="checkbox" class="toggle-input" />
+              <span class="toggle-slider" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-logo-title-group">
+            <img
+              src="assets/images/logo-json-wizard.svg"
+              alt=""
+              class="extension-logo"
+            />
+            <div class="title-description">
+              <h3 class="extension-name">JSONWizard</h3>
+              <p class="extension-description">
+                Formats, validates, and prettifies JSON responses in-browser.
+              </p>
+            </div>
+          </div>
+
+          <div class="remove-active-status-group">
+            <button class="remove-button" type="button">Remove</button>
+            <label class="extension-toggle">
+              <input type="checkbox" class="toggle-input" />
+              <span class="toggle-slider" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-logo-title-group">
+            <img
+              src="assets/images/logo-tab-master-pro.svg"
+              alt=""
+              class="extension-logo"
+            />
+            <div class="title-description">
+              <h3 class="extension-name">TabMaster Pro</h3>
+              <p class="extension-description">
+                Organizes browser tabs into groups and sessions.
+              </p>
+            </div>
+          </div>
+
+          <div class="remove-active-status-group">
+            <button class="remove-button" type="button">Remove</button>
+            <label class="extension-toggle">
+              <input type="checkbox" class="toggle-input" />
+              <span class="toggle-slider" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-logo-title-group">
+            <img
+              src="assets/images/logo-viewport-buddy.svg"
+              alt=""
+              class="extension-logo"
+            />
+            <div class="title-description">
+              <h3 class="extension-name">ViewportBuddY</h3>
+              <p class="extension-description">
+                Simulates various screen resolutions directly within the
+                browser.
+              </p>
+            </div>
+          </div>
+
+          <div class="remove-active-status-group">
+            <button class="remove-button" type="button">Remove</button>
+            <label class="extension-toggle">
+              <input type="checkbox" class="toggle-input" />
+              <span class="toggle-slider" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-logo-title-group">
+            <img
+              src="assets/images/logo-markup-notes.svg"
+              alt=""
+              class="extension-logo"
+            />
+            <div class="title-description">
+              <h3 class="extension-name">Markup Notes</h3>
+              <p class="extension-description">
+                Enables annotation and notes directly onto webpages for
+                collaborative debugging.
+              </p>
+            </div>
+          </div>
+
+          <div class="remove-active-status-group">
+            <button class="remove-button" type="button">Remove</button>
+            <label class="extension-toggle">
+              <input type="checkbox" class="toggle-input" />
+              <span class="toggle-slider" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-logo-title-group">
+            <img
+              src="assets/images/logo-grid-guides.svg"
+              alt=""
+              class="extension-logo"
+            />
+            <div class="title-description">
+              <h3 class="extension-name">GridGuides</h3>
+              <p class="extension-description">
+                Overlay customizable grids and alignment guides on any webpage.
+              </p>
+            </div>
+          </div>
+
+          <div class="remove-active-status-group">
+            <button class="remove-button" type="button">Remove</button>
+            <label class="extension-toggle">
+              <input type="checkbox" class="toggle-input" />
+              <span class="toggle-slider" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-logo-title-group">
+            <img
+              src="assets/images/logo-palette-picker.svg"
+              alt=""
+              class="extension-logo"
+            />
+            <div class="title-description">
+              <h3 class="extension-name">Palette Picker</h3>
+              <p class="extension-description">
+                Instantly extracts color palettes from any webpage.
+              </p>
+            </div>
+          </div>
+
+          <div class="remove-active-status-group">
+            <button class="remove-button" type="button">Remove</button>
+            <label class="extension-toggle">
+              <input type="checkbox" class="toggle-input" />
+              <span class="toggle-slider" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-logo-title-group">
+            <img
+              src="assets/images/logo-link-checker.svg"
+              alt=""
+              class="extension-logo"
+            />
+            <div class="title-description">
+              <h3 class="extension-name">LinkChecker</h3>
+              <p class="extension-description">
+                Scans and highlights broken links on any page.
+              </p>
+            </div>
+          </div>
+
+          <div class="remove-active-status-group">
+            <button class="remove-button" type="button">Remove</button>
+            <label class="extension-toggle">
+              <input type="checkbox" class="toggle-input" />
+              <span class="toggle-slider" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-logo-title-group">
+            <img
+              src="assets/images/logo-dom-snapshot.svg"
+              alt=""
+              class="extension-logo"
+            />
+            <div class="title-description">
+              <h3 class="extension-name">DOM Snapshot</h3>
+              <p class="extension-description">
+                Capture and export DOM structures quickly.
+              </p>
+            </div>
+          </div>
+
+          <div class="remove-active-status-group">
+            <button class="remove-button" type="button">Remove</button>
+            <label class="extension-toggle">
+              <input type="checkbox" class="toggle-input" />
+              <span class="toggle-slider" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+        <div class="extension-card">
+          <div class="extension-logo-title-group">
+            <img
+              src="assets/images/logo-console-plus.svg"
+              alt=""
+              class="extension-logo"
+            />
+            <div class="title-description">
+              <h3 class="extension-name">ConsolePlus</h3>
+              <p class="extension-description">
+                Enhanced developer console with advanced filtering and logging.
+              </p>
+            </div>
+          </div>
+
+          <div class="remove-active-status-group">
+            <button class="remove-button" type="button">Remove</button>
+            <label class="extension-toggle">
+              <input type="checkbox" class="toggle-input" />
+              <span class="toggle-slider" aria-hidden="true"></span>
+            </label>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      // 🌓 Light/Dark Theme Toggle
+      const toggleButton = document.getElementById("theme-toggle");
+      const themeIcon = document.getElementById("theme-icon");
+
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light") {
+        document.body.classList.add("light-theme");
+        themeIcon.src = "assets/images/icon-moon.svg";
+        themeIcon.alt = "Switch to dark mode";
+      }
+
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("light-theme");
+        const isLight = document.body.classList.contains("light-theme");
+
+        themeIcon.src = isLight
+          ? "assets/images/icon-moon.svg"
+          : "assets/images/icon-sun.svg";
+        themeIcon.alt = isLight
+          ? "Switch to dark mode"
+          : "Switch to light mode";
+
+        localStorage.setItem("theme", isLight ? "light" : "dark");
+      });
+
+      // 🌐 Global extension data
+      let allExtensions = [];
+
+      // 📦 Try loading from localStorage first
+      const stored = localStorage.getItem("extensions");
+      if (stored) {
+        allExtensions = JSON.parse(stored);
+        renderExtensions(allExtensions);
+      } else {
+        fetch("data.json")
+          .then((res) => res.json())
+          .then((data) => {
+            allExtensions = data;
+            localStorage.setItem("extensions", JSON.stringify(data));
+            renderExtensions(allExtensions);
+          });
+      }
+
+      // 🎨 Render extension cards
+      function renderExtensions(extensions) {
+        const list = document.getElementById("extensions-list");
+        list.innerHTML = ""; // clear old cards
+
+        extensions.forEach((extension) => {
+          const card = document.createElement("div");
+          card.className = "extension-card";
+          card.innerHTML = `
+            <div class="extension-logo-title-group">
+              <img src="${extension.logo}" alt="" class="extension-logo" />
+              <div class="title-description">
+                <h3 class="extension-name">${extension.name}</h3>
+                <p class="extension-description">${extension.description}</p>
+              </div>
+            </div>
+            <div class="remove-active-status-group">
+              <button class="remove-button" type="button">Remove</button>
+              <label class="extension-toggle">
+                <input type="checkbox" class="toggle-input" ${
+                  extension.isActive ? "checked" : ""
+                } />
+                <span class="toggle-slider" aria-hidden="true"></span>
+              </label>
+            </div>
+          `;
+          list.appendChild(card);
+
+          // 🗑️ Remove card logic
+          card.querySelector(".remove-button").addEventListener("click", () => {
+            allExtensions = allExtensions.filter(
+              (ext) => ext.name !== extension.name
+            );
+            localStorage.setItem("extensions", JSON.stringify(allExtensions));
+            applyCurrentFilter();
+          });
+
+          // ✅ Toggle active/inactive logic
+          card
+            .querySelector(".toggle-input")
+            .addEventListener("change", (e) => {
+              const isChecked = e.target.checked;
+              const match = allExtensions.find(
+                (ext) => ext.name === extension.name
+              );
+              if (match) match.isActive = isChecked;
+
+              localStorage.setItem("extensions", JSON.stringify(allExtensions));
+              applyCurrentFilter();
+            });
+        });
+      }
+
+      // 🔁 Apply current filter (helper for toggle/remove)
+      function applyCurrentFilter() {
+        const activeFilter = document
+          .querySelector(".filter-button.is-active")
+          .textContent.toLowerCase();
+
+        if (activeFilter === "all") {
+          renderExtensions(allExtensions);
+        } else if (activeFilter === "active") {
+          renderExtensions(allExtensions.filter((ext) => ext.isActive));
+        } else {
+          renderExtensions(allExtensions.filter((ext) => !ext.isActive));
+        }
+      }
+
+      // 🧭 Filter buttons
+      document.querySelectorAll(".filter-button").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".filter-button")
+            .forEach((b) => b.classList.remove("is-active"));
+          btn.classList.add("is-active");
+
+          const type = btn.textContent.trim().toLowerCase();
+          if (type === "all") {
+            renderExtensions(allExtensions);
+          } else if (type === "active") {
+            renderExtensions(allExtensions.filter((ext) => ext.isActive));
+          } else {
+            renderExtensions(allExtensions.filter((ext) => !ext.isActive));
+          }
+        });
+      });
+
+      // 🔑 Press "R" key to reset all extensions (dev shortcut)
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "r" && e.ctrlKey) {
+          fetch("data.json")
+            .then((res) => res.json())
+            .then((data) => {
+              allExtensions = data;
+              localStorage.setItem("extensions", JSON.stringify(data));
+              renderExtensions(allExtensions);
+
+              document
+                .querySelectorAll(".filter-button")
+                .forEach((b) => b.classList.remove("is-active"));
+              document
+                .querySelector(".filter-button:first-child")
+                .classList.add("is-active");
+            });
+        }
+      });
+    </script>
+  </body>
+</html>
