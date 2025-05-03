@@ -3,6 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A responsive browser extension manager built with HTML, CSS, JavaScript, and JSON as part of a Frontend Mentor challenge."
+    />
+    <meta property="og:title" content="Browser Extension Manager" />
+    <meta
+      property="og:description"
+      content="Frontend Mentor challenge using HTML, CSS, JavaScript, and JSON."
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Browser Extension Manager" />
+    <meta
+      name="twitter:description"
+      content="Frontend Mentor challenge using HTML, CSS, JavaScript, and JSON."
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,12 +28,12 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
-    <title>Browser Extension Manager</title>
+    <title>Browser Extension Manager | Frontend Mentor Challenge</title>
   </head>
   <body>
     <div class="site-container">
       <header>
-        <div class="logo-text-wrap">
+        <a href="index.html" class="logo-text-wrap">
           <div class="logo-wrap">
             <img
               src="assets/images/logo-solo.svg"
@@ -24,8 +41,8 @@
               class="brand-logo"
             />
           </div>
-          <span class="logo-text">Extensions</span>
-        </div>
+          <h1 class="logo-text">Extensions</h1>
+        </a>
         <div class="dark-light-mode-button" id="theme-toggle">
           <img
             id="theme-icon"
@@ -34,20 +51,21 @@
           />
         </div>
       </header>
-      <section class="extension-filters-group">
+      <nav class="extension-filters-group">
         <h2>Extensions List</h2>
         <div class="filter-buttons-group">
           <button class="filter-button is-active" type="button">All</button>
           <button class="filter-button" type="button">Active</button>
           <button class="filter-button" type="button">Inactive</button>
         </div>
-      </section>
+      </nav>
+
       <main id="extensions-list" class="extension-dashboard">
         <div class="extension-card">
           <div class="extension-logo-title-group">
             <img
               src="assets/images/logo-devlens.svg"
-              alt=""
+              alt="DevLens extension logo"
               class="extension-logo"
             />
             <div class="title-description">
@@ -61,7 +79,11 @@
           <div class="remove-active-status-group">
             <button class="remove-button" type="button">Remove</button>
             <label class="extension-toggle">
-              <input type="checkbox" class="toggle-input" />
+              <input
+                type="checkbox"
+                class="toggle-input"
+                aria-label="Toggle extension for DevLens"
+              />
               <span class="toggle-slider" aria-hidden="true"></span>
             </label>
           </div>
@@ -70,7 +92,7 @@
           <div class="extension-logo-title-group">
             <img
               src="assets/images/logo-style-spy.svg"
-              alt=""
+              alt="StyleSpy extension logo"
               class="extension-logo"
             />
             <div class="title-description">
@@ -84,7 +106,11 @@
           <div class="remove-active-status-group">
             <button class="remove-button" type="button">Remove</button>
             <label class="extension-toggle">
-              <input type="checkbox" class="toggle-input" />
+              <input
+                type="checkbox"
+                class="toggle-input"
+                aria-label="Toggle extension for StyleSpy"
+              />
               <span class="toggle-slider" aria-hidden="true"></span>
             </label>
           </div>
@@ -93,7 +119,7 @@
           <div class="extension-logo-title-group">
             <img
               src="assets/images/logo-speed-boost.svg"
-              alt=""
+              alt="SpeedBoost extension logo"
               class="extension-logo"
             />
             <div class="title-description">
@@ -107,7 +133,11 @@
           <div class="remove-active-status-group">
             <button class="remove-button" type="button">Remove</button>
             <label class="extension-toggle">
-              <input type="checkbox" class="toggle-input" />
+              <input
+                type="checkbox"
+                class="toggle-input"
+                aria-label="Toggle extension for SpeedBoost"
+              />
               <span class="toggle-slider" aria-hidden="true"></span>
             </label>
           </div>
@@ -116,7 +146,7 @@
           <div class="extension-logo-title-group">
             <img
               src="assets/images/logo-json-wizard.svg"
-              alt=""
+              alt="JSONWizard extension logo"
               class="extension-logo"
             />
             <div class="title-description">
@@ -130,7 +160,11 @@
           <div class="remove-active-status-group">
             <button class="remove-button" type="button">Remove</button>
             <label class="extension-toggle">
-              <input type="checkbox" class="toggle-input" />
+              <input
+                type="checkbox"
+                class="toggle-input"
+                aria-label="Toggle extension for JSONWizard"
+              />
               <span class="toggle-slider" aria-hidden="true"></span>
             </label>
           </div>
@@ -139,7 +173,7 @@
           <div class="extension-logo-title-group">
             <img
               src="assets/images/logo-tab-master-pro.svg"
-              alt=""
+              alt="TabMaster Pro extension logo"
               class="extension-logo"
             />
             <div class="title-description">
@@ -153,7 +187,11 @@
           <div class="remove-active-status-group">
             <button class="remove-button" type="button">Remove</button>
             <label class="extension-toggle">
-              <input type="checkbox" class="toggle-input" />
+              <input
+                type="checkbox"
+                class="toggle-input"
+                aria-label="Toggle extension for TabMaster Pro"
+              />
               <span class="toggle-slider" aria-hidden="true"></span>
             </label>
           </div>
@@ -162,7 +200,7 @@
           <div class="extension-logo-title-group">
             <img
               src="assets/images/logo-viewport-buddy.svg"
-              alt=""
+              alt="ViewportBuddY extension logo"
               class="extension-logo"
             />
             <div class="title-description">
@@ -177,7 +215,11 @@
           <div class="remove-active-status-group">
             <button class="remove-button" type="button">Remove</button>
             <label class="extension-toggle">
-              <input type="checkbox" class="toggle-input" />
+              <input
+                type="checkbox"
+                class="toggle-input"
+                aria-label="Toggle extension for ViewportBuddY"
+              />
               <span class="toggle-slider" aria-hidden="true"></span>
             </label>
           </div>
@@ -186,7 +228,7 @@
           <div class="extension-logo-title-group">
             <img
               src="assets/images/logo-markup-notes.svg"
-              alt=""
+              alt="Markup Notes extension logo"
               class="extension-logo"
             />
             <div class="title-description">
@@ -201,7 +243,11 @@
           <div class="remove-active-status-group">
             <button class="remove-button" type="button">Remove</button>
             <label class="extension-toggle">
-              <input type="checkbox" class="toggle-input" />
+              <input
+                type="checkbox"
+                class="toggle-input"
+                aria-label="Toggle extension for Markup Notes"
+              />
               <span class="toggle-slider" aria-hidden="true"></span>
             </label>
           </div>
@@ -210,7 +256,7 @@
           <div class="extension-logo-title-group">
             <img
               src="assets/images/logo-grid-guides.svg"
-              alt=""
+              alt="GridGuides extension logo"
               class="extension-logo"
             />
             <div class="title-description">
@@ -224,7 +270,11 @@
           <div class="remove-active-status-group">
             <button class="remove-button" type="button">Remove</button>
             <label class="extension-toggle">
-              <input type="checkbox" class="toggle-input" />
+              <input
+                type="checkbox"
+                class="toggle-input"
+                aria-label="Toggle extension for GridGuides"
+              />
               <span class="toggle-slider" aria-hidden="true"></span>
             </label>
           </div>
@@ -233,7 +283,7 @@
           <div class="extension-logo-title-group">
             <img
               src="assets/images/logo-palette-picker.svg"
-              alt=""
+              alt="Palette Picker extension logo"
               class="extension-logo"
             />
             <div class="title-description">
@@ -247,7 +297,11 @@
           <div class="remove-active-status-group">
             <button class="remove-button" type="button">Remove</button>
             <label class="extension-toggle">
-              <input type="checkbox" class="toggle-input" />
+              <input
+                type="checkbox"
+                class="toggle-input"
+                aria-label="Toggle extension for Palette Picker"
+              />
               <span class="toggle-slider" aria-hidden="true"></span>
             </label>
           </div>
@@ -256,7 +310,7 @@
           <div class="extension-logo-title-group">
             <img
               src="assets/images/logo-link-checker.svg"
-              alt=""
+              alt="LinkChecker extension logo"
               class="extension-logo"
             />
             <div class="title-description">
@@ -270,7 +324,11 @@
           <div class="remove-active-status-group">
             <button class="remove-button" type="button">Remove</button>
             <label class="extension-toggle">
-              <input type="checkbox" class="toggle-input" />
+              <input
+                type="checkbox"
+                class="toggle-input"
+                aria-label="Toggle extension for LinkChecker"
+              />
               <span class="toggle-slider" aria-hidden="true"></span>
             </label>
           </div>
@@ -279,7 +337,7 @@
           <div class="extension-logo-title-group">
             <img
               src="assets/images/logo-dom-snapshot.svg"
-              alt=""
+              alt="DOM Snapshot extension logo"
               class="extension-logo"
             />
             <div class="title-description">
@@ -293,7 +351,11 @@
           <div class="remove-active-status-group">
             <button class="remove-button" type="button">Remove</button>
             <label class="extension-toggle">
-              <input type="checkbox" class="toggle-input" />
+              <input
+                type="checkbox"
+                class="toggle-input"
+                aria-label="Toggle extension for DOM Snapshot"
+              />
               <span class="toggle-slider" aria-hidden="true"></span>
             </label>
           </div>
@@ -302,7 +364,7 @@
           <div class="extension-logo-title-group">
             <img
               src="assets/images/logo-console-plus.svg"
-              alt=""
+              alt="ConsolePlus extension logo"
               class="extension-logo"
             />
             <div class="title-description">
@@ -316,7 +378,11 @@
           <div class="remove-active-status-group">
             <button class="remove-button" type="button">Remove</button>
             <label class="extension-toggle">
-              <input type="checkbox" class="toggle-input" />
+              <input
+                type="checkbox"
+                class="toggle-input"
+                aria-label="Toggle extension for ConsolePlus"
+              />
               <span class="toggle-slider" aria-hidden="true"></span>
             </label>
           </div>
@@ -378,7 +444,9 @@
           card.className = "extension-card";
           card.innerHTML = `
             <div class="extension-logo-title-group">
-              <img src="${extension.logo}" alt="" class="extension-logo" />
+              <img src="${extension.logo}" alt="${
+            extension.name
+          } extension logo" class="extension-logo" />
               <div class="title-description">
                 <h3 class="extension-name">${extension.name}</h3>
                 <p class="extension-description">${extension.description}</p>

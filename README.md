@@ -6,7 +6,7 @@
 
 🔗 **Live Demo:** ([View the Project](https://chrisbk9674.github.io/browser-extension-manager/) )
 
-This project is a **Browser Extension Manager** built as part of a **Frontend Mentor coding challenge**. The goal was to replicate a provided design **as accurately as possible** using **HTML, CSS and Javascript**, and a local JSON data file, ensuring both a polished appearance and robust functionality.
+This project is a **Browser Extension Manager** built as part of a **Frontend Mentor coding challenge**. The goal was to replicate a provided design **as accurately as possible** using **HTML, CSS, Javascript**, and a local JSON data file, ensuring both a polished appearance and robust functionality.
 
 ## ✨ Features
 
