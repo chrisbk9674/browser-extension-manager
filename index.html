@@ -416,10 +416,8 @@
         localStorage.setItem("theme", isLight ? "light" : "dark");
       });
 
-      // 🌐 Global extension data
       let allExtensions = [];
 
-      // 📦 Try loading from localStorage first
       const stored = localStorage.getItem("extensions");
       if (stored) {
         allExtensions = JSON.parse(stored);
@@ -434,10 +432,9 @@
           });
       }
 
-      // 🎨 Render extension cards
       function renderExtensions(extensions) {
         const list = document.getElementById("extensions-list");
-        list.innerHTML = ""; // clear old cards
+        list.innerHTML = "";
 
         extensions.forEach((extension) => {
           const card = document.createElement("div");
@@ -464,7 +461,6 @@
           `;
           list.appendChild(card);
 
-          // 🗑️ Remove card logic
           card.querySelector(".remove-button").addEventListener("click", () => {
             allExtensions = allExtensions.filter(
               (ext) => ext.name !== extension.name
@@ -473,7 +469,6 @@
             applyCurrentFilter();
           });
 
-          // ✅ Toggle active/inactive logic
           card
             .querySelector(".toggle-input")
             .addEventListener("change", (e) => {
@@ -489,7 +484,6 @@
         });
       }
 
-      // 🔁 Apply current filter (helper for toggle/remove)
       function applyCurrentFilter() {
         const activeFilter = document
           .querySelector(".filter-button.is-active")
@@ -504,7 +498,6 @@
         }
       }
 
-      // 🧭 Filter buttons
       document.querySelectorAll(".filter-button").forEach((btn) => {
         btn.addEventListener("click", () => {
           document
@@ -523,7 +516,6 @@
         });
       });
 
-      // 🔑 Press "R" key to reset all extensions (dev shortcut)
       document.addEventListener("keydown", (e) => {
         if (e.key === "r" && e.ctrlKey) {
           fetch("data.json")

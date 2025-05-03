@@ -56,7 +56,6 @@ body {
   width: 100%;
   overflow-x: hidden;
   background-color: #080f2c;
-  /* padding: 40px 135px 64px 135px; */
   padding-top: 40px;
   padding-bottom: 64px;
   padding-left: clamp(16px, 5vw, 135px);
@@ -110,7 +109,7 @@ body.light-theme .remove-button {
 }
 
 body.light-theme .toggle-slider {
-  background-color: #c7c7c7; /* Inactive (gray) */
+  background-color: #c7c7c7;
 }
 
 body.light-theme .dark-light-mode-button {
@@ -118,10 +117,7 @@ body.light-theme .dark-light-mode-button {
 }
 
 body.light-theme .filter-button.is-active {
-  /* background-color: #f2635b !important; */
   color: #fff;
-  /* font-weight: 700;
-  letter-spacing: -1px; */
 }
 
 header {
@@ -161,12 +157,8 @@ h1.logo-text {
   font-size: 24px;
 }
 
-/* .logo-text {
-  color: #091540; 
-} */
-
 .dark-mode .logo-text {
-  color: #ffffff; /* Dark mode color */
+  color: #ffffff;
 }
 
 .dark-light-mode-button {
@@ -195,11 +187,11 @@ h1.logo-text {
 }
 
 .extension-filters-group h2 {
-  font-weight: 700; /* Bold */
+  font-weight: 700;
   color: #fff;
   font-size: 34px;
   line-height: 27px;
-  letter-spacing: -0.918px; /* -2.7% of 34px */
+  letter-spacing: -0.918px;
 }
 
 .filter-buttons-group {
@@ -214,16 +206,15 @@ h1.logo-text {
   justify-content: center;
   align-items: center;
   gap: 12px;
-  font-weight: 400; /* Bold */
+  font-weight: 400;
   font-size: 20px;
   letter-spacing: -0.2px;
   transition: background-color 0.3s ease, color 0.3s ease;
   color: #fff;
   background-color: #2f354b;
-  /* padding: 14px 21px 14px 21px; */
   padding: 9px 19px;
   border-radius: 9999px;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* or similar */
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .filter-button.is-active {
@@ -247,14 +238,13 @@ main.extension-dashboard {
   height: 200px;
   background-color: #1f2535;
   border-radius: 19px;
-  /* padding: 20px; */
   padding: 18px;
   border: 1px solid rgba(255, 255, 255, 0.2);
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden; /* Prevents content from spilling if too tall */
+  overflow: hidden;
 }
 
 .extension-logo-title-group {
@@ -274,7 +264,6 @@ h3.extension-name {
 }
 
 p.extension-description {
-  /* margin-bottom: 46px; */
   font-size: 16px;
   line-height: 22px;
   letter-spacing: -0.48px;
@@ -289,20 +278,17 @@ p.extension-description {
 }
 
 button.remove-button {
-  /* padding: 9px 16px; */
   width: 91px;
   height: 38px;
   color: #fff;
   border-radius: 9999px;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* or similar */
+  border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: #1f2535;
-  font-weight: 400; /* Regular */
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: -0.32px; /* 2% of 16px = 0.32px */
+  letter-spacing: -0.32px;
 }
-
-/* Toggle button styles */
 
 .extension-toggle {
   display: inline-block;
@@ -324,7 +310,7 @@ button.remove-button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #575d6d; /* Inactive (gray) */
+  background-color: #575d6d;
   border-radius: 9999px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -342,9 +328,8 @@ button.remove-button {
   transition: transform 0.3s ease;
 }
 
-/* When checked */
 .toggle-input:checked + .toggle-slider {
-  background-color: #c8221c; /* Active (red) */
+  background-color: #c8221c;
 }
 
 .toggle-input:checked + .toggle-slider::before {
@@ -368,6 +353,6 @@ button.remove-button {
 
 @media (max-width: 444px) {
   main.extension-dashboard {
-    grid-template-columns: 1fr; /* Stack cards vertically */
+    grid-template-columns: 1fr;
   }
 }
