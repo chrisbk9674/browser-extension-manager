@@ -19,6 +19,7 @@ select {
   font: inherit;
   border: none;
   background: none;
+  cursor: pointer;
 }
 
 p,
@@ -170,6 +171,7 @@ h1.logo-text {
   border-radius: 12px;
   padding: 15px;
   background-color: #2f354b;
+  cursor: pointer;
 }
 
 .dark-light-mode-button img {

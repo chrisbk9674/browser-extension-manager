@@ -391,7 +391,6 @@
     </div>
 
     <script>
-      // 🌓 Light/Dark Theme Toggle
       const toggleButton = document.getElementById("theme-toggle");
       const themeIcon = document.getElementById("theme-icon");
 
@@ -454,7 +453,7 @@
               <label class="extension-toggle">
                 <input type="checkbox" class="toggle-input" ${
                   extension.isActive ? "checked" : ""
-                } />
+                } aria-label="Toggle extension for ${extension.name}"/>
                 <span class="toggle-slider" aria-hidden="true"></span>
               </label>
             </div>
